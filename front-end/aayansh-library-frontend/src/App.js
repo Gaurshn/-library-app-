@@ -10,7 +10,7 @@ import LogIn from "./components/loginpage";
 
 const ownerDetail = [
   {
-    name: "Aditya Sahani",
+    name: "Aditya",
     designation: "Owner",
     phoneno: 7457021151,
     emailid: "adityaSahani36@gmail.com",
