@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a clean font for the entire app */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent sideways scrolling */
+}
+
+.library-container {
+  width: 100%;
+  min-height: 100vh; /* ensures it covers full screen height */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #6d7171;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 8px;
+  position: relative;
+  height: 20vh;
+}
+.footer {
+  height: 20vh;
+  background-color: #4f4c4c;
+}
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.libraryname {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.tagline {
+  font-size: 12px;
+  margin-top: -2px;
+  margin-left: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.address {
+  font-size: 16px;
+  margin-top: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-right {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+}
+.header-right a {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  text-decoration: none;
+}
+
+.mainlist {
+  background-image: url(../public/library-logo-background.jpg);
+  background-size: cover; /* make image cover whole section */
+  padding: 2rem; /* optional - some spacing */
+  display: flex;
+  background-color: grey;
+  padding: 30px 40px;
+  flex-wrap: wrap; /* allow wrapping if needed */
+  margin: 0 auto; /* center it horizontally */
+  width: 100%;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+.slot-list {
+  width: 250px;
+  background-color: #d3dae3;
+  padding: 20px;
+  border-radius: 8px;
+}
+.slot-list h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.slot-list ul {
+  list-style: none;
+}
+
+.slot-list li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 5px;
+}
+
+.slot-box {
+  background-color: white;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+}
+.slot-box:hover {
+  background-color: #005fa3;
+  transform: translateY(-5px);
+}
+.planlist {
+  flex: 1;
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* reduced from 100px */
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-card {
+  background-color: #e4baba;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 220px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-card h3 {
+  font-size: 20px;
+  color: black;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #0077cc;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.features li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.subscribe-btn {
+  margin-top: 10px;
+  background-color: #0077cc;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #005fa3;
+}
+
+.owner-card {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  flex-direction: column;
+  background-color: #e4baba;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.ownercard-container {
+  background-image: url(../public/library-logo-background.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; /* optional if multiple cards overflow */
+  align-items: center;
+  justify-content: center; /* CENTER the cards */
+  height: 80vh;
+  width: 100%; /* (optional) to push them vertically centered */
+  gap: 30px;
+}
+
+.LoginPage {
+  background-image: url(../public/library-logo-background.jpg);
+  display: flex;
+  /* optional if multiple cards overflow */
+  align-items: center;
+  justify-content: center; /* CENTER the cards */
+  height: 80vh;
+  width: 100%; /* (optional) to push them vertically centered */
+  gap: 30px;
+}
+
+.login-form {
+  background-color: #e4baba;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input {
+  height: 30px;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.logIn-btn {
+  background-color: blue;
+  height: 40px;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.register-container {
+  background-color: #080a0a;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+}
+
+.register-container.move-left {
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+.form-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 420px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-panel span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-panel button[type="button"] {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.form-panel button[type="submit"] {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  gap: 10px;
+  padding: 20px;
+  flex: 1;
+  max-width: 500px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.seat.booked {
+  background-color: red;
+  cursor: not-allowed;
+}
+.seat.selected {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
